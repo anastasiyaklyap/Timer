@@ -11,8 +11,8 @@ function App() {
 		let interval;
 		if (isRunning) {
 			interval = setInterval(() => {
-				setTime((time) => time + 1);
-			}, 1);
+				setTime((time) => time + 100);
+			}, 100);
 		}
 		return () => clearInterval(interval);
 	}, [isRunning]);
